@@ -155,7 +155,9 @@ p{
     font-size:80px;;
     margin: 0 0 20px;
   }
-
+  .overlay button a{
+    color: #ffffff;
+  }
   .overlay button {
     width: 10em;
     padding: 12px 30px;
