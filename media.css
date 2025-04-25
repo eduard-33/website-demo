@@ -1,0 +1,136 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.two-column-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+}
+
+.two-column-section .column {
+    width: 100%; 
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.two-column-section .column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.two-column-section .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .navbar nav ul {
+        justify-content: flex-end; 
+    }
+
+    .slider .overlay h1 {
+        font-size: 3em;
+    }
+
+    .two-column-section {
+        flex-direction: row; 
+    }
+
+    .two-column-section .column {
+        width: 50%;
+    }
+
+    .featured-proudct .row {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    .featured-proudct .col-1 {
+        width: 45%;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .info-icons {
+        flex-direction: row; 
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .footer-container {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    margin-top: 200px;
+}
+
+
+/* --- Product Area ---  */
+.product-area {
+    width: 100%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 0.9em;
+    color: #888;
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row; 
+    }
+
+
+
+    .product-area {
+        width: 75%;
+    }
+}
